@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+table {
+    padding-right: 50;
+    padding-left: 50;
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: fixed;
+}
+
+th, td {
+  margin: 5px 20px 5px 5px; /* top right bottom left */
+  padding: 5px 20px 5px 5px; /* top right bottom left */
+  border: transparent;
+}
+
+th {
+  background-color: transparent;
+}
+
+td {
+  text-align: center;
+  flex: 50
+}
+.line {
+  border-top: 2px solid black;
+}
+
+.container {
+    display: flex; 
+    height: 120vh;
+    background-image: url("R2.jpg"); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.left-image {
+    width: 25%;
+    height: 120vh;
+    background-image: url("id_pic-removebg2-removebg-preview-removebg-preview.png"); /* Path to your left-aligned image */
+    background-size: cover;
+    background-position: left;
+}
+.resume {
+    margin: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+    width: 60%;
+    height: 100vh;
+    display: inline-flex;
+}
+@media screen and (max-width: 768px){
+    .left-image {
+        display: none;
+    }
+    .resume {
+        width: 100%; /* Make resume content take full width */
+    }
+
+    /* Hide specific content in resume below a certain width */
+  tr {
+        display: none;
+    }
+  h2 {
+        display: none;
+    }
+}
